@@ -4,7 +4,7 @@ def roll_call_dwarves(names, index)# code an argument here
   list = []
     i = 0
     while i < names.length
-      list << yield(names[i], index)
+      list << yield(index, names[i])
       i += 1
     end
     puts list
